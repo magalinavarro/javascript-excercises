@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Autocotizador de viajes | Desafío 7</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="contenedor">
+	      <h1 id="titulo-app">Autocotizá tu próximo viaje</h1> 
+	      <p class="texto">Paso 1: elegí un destino que quieras visitar</p>
+	      <p class="texto" id="segundo">Paso 2: elegí cuántos días te querés quedar</p>    
+	      <p class="texto">Paso 3: elegí adicionales y clickeá en "cotizar"<br></p>
+	      <span class="boton" id="boton" onclick="alert('📧 Te enviamos un mail con la cotización. ¡Gracias por elegirnos! 😃');">Cotizar</span>
+	    </div>
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js">
+			$(document).on('keypress',function(e) {
+    			if(e.which == 13) {
+        			alert('📧 Te enviamos un mail con la cotización. ¡Gracias por elegirnos! 😃');
+    			};
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
